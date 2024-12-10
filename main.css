@@ -1,0 +1,228 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral */
+body {
+    background-color:var(--cor-backg3-sucess)
+}
+
+/* Cabeçalhos e textos */
+
+    h1 {
+        color: rgb(227, 227, 227);
+        font-size: 40px; /
+        text-align: center; /* Centraliza o texto */
+        margin: 10; /* Remove margens do título */
+}   
+h2 {
+    color: rgb(61, 61, 61);
+    margin-bottom: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.creation-date { 
+    color:gray;
+    font-size: smaller;
+}
+
+article {
+    color: rgb(46, 46, 46);
+}
+
+h3 {
+    color: black;
+    font-style: oblique;
+    margin: 5px 0;
+}
+
+/* Cor dos botões */
+
+:root{
+    --cor-read1-sucess : rgb(0, 115, 94);
+    --cor-read2-sucess : rgb(146, 246, 226);
+
+    --cor-readx1-sucess : rgb(34, 65, 85);
+    --cor-readx2-sucess : rgb(117, 198, 251);
+
+    --cor-backg1-sucess : rgb(255, 251, 244);
+    --cor-backg2-sucess : rgb(217, 217, 217);
+    --cor-backg3-sucess : #eeeee3;
+
+
+}
+
+.read {
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    border: 9px;
+    padding: 3px 10px;
+    text-decoration: none;
+    background-color: var(--cor-read1-sucess);
+    color: white;text-align: center;
+    display: block; /*O botão ocupa toda a largura disponível*/
+    text-align: center; /*Mantem o texto centralizado*/
+}
+
+.read:hover {
+        color: rgb(46, 46, 46);
+        font-size: small;
+        font-family: 'Courier New', Courier, monospace;
+        border: 9px;
+        padding: 3px 10px;
+        text-decoration: none;
+        text-align: center;
+        background-color: var(--cor-read2-sucess);
+        color: rgb(0, 0, 0);
+    }
+
+.readx {
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    border: 9px;
+    justify-content: center;
+    padding: 3px 10px; text-decoration: none;
+    background-color: var(--cor-readx1-sucess);
+    color:white;
+    display: block; /*O botão ocupa toda a largura disponível*/
+    text-align: center; /*Mantem o texto centralizado*/
+    
+    
+    
+}
+.readx:hover {
+    color: rgb(46, 46, 46);
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    border: 9px;
+    justify-content: center;
+    padding: 3px 10px; text-decoration: none;
+    text-align: center;
+    background-color: var(--cor-readx2-sucess);
+    color: rgb(0, 0, 0);
+}
+
+/* Header */
+header {
+    width:auto; /* Garante que o header ocupe toda a largura */
+    text-align:justify; /* Centraliza o conteúdo dentro do header */
+    padding: 0px;
+    background-color: gray;
+    justify-content:center;
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro */
+    gap: 20px; /* Espaço entre os links */
+    margin-top: 10px; /* Distância do título */
+}
+.containerheader {
+    display: flex;
+    width: 100%;
+    max-width: 1366px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo dentro do container */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#up h1 {
+    font-size: 40px; /* Ajuste do tamanho */
+    color: rgb(255, 255, 255); /* Cor do título */
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    margin: 20px; /* Espaçamento acima e abaixo do título */
+    align-items:center;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+nav ul li {
+    text-align: center;
+    display: inline; /* Exibe os itens em linha */
+    margin: 0 4px; /* Espaçamento entre os itens */
+
+
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(236, 236, 236); /* Cor dos links */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px 10px; /* Espaçamento interno nos links */
+    transition: border 0.3s; /* Adiciona transição para o efeito de borda */
+    text-align: center;
+
+}
+
+
+nav ul li a:hover {
+    border: 2px solid olive; /* Borda quando o mouse passa sobre o link */
+    border-radius: 50%; /* Borda arredondada */
+    text-align: center;
+    
+}
+
+p{
+    padding-bottom: 15px;
+}
+
+/* Container principal */
+.container {
+    width: 100%; 
+    max-width: 1366px; 
+    margin: 0 auto; /* Centraliza o container principal */
+}
+
+/* Organização dos artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+section {
+    width: calc(33.333% - 20px); /* Divide em 3 colunas */
+    margin-bottom: 20px; /* Espaço entre as linhas */
+}
+
+section img {
+    width: 100%; /* Garante que as imagens ocupem toda a largura do container */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    object-fit: cover; /* Assegura que a imagem cubra o espaço sem distorcer */
+}
+
+/* Cores da Seção*/
+
+#sports, #economy, #fashion, #music, #technology, #pet {
+    background-color: var(--cor-backg1-sucess);
+}
+
+#music, #technology, #pet {
+    background-color: var(--cor-backg2-sucess);
+}
+
+#sports:hover, #economy:hover, #fashion:hover, #music:hover, #technology:hover, #pet:hover {
+    background-color: var(--cor-backg3-sucess); 
+}
+
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    color: olive;
+    margin-top: 40px;
+}
